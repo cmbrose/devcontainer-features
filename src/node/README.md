@@ -7,7 +7,7 @@ Installs Node.js, nvm, yarn, and needed dependencies.
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/node:1": {
+    "ghcr.io/cmbrose/devcontainer-features/node:1": {
         "version": "latest"
     }
 }
@@ -26,4 +26,4 @@ Installs Node.js, nvm, yarn, and needed dependencies.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/node/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/node/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

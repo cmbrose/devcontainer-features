@@ -7,7 +7,7 @@ Installs a set of common command line utilities, Oh My Zsh!, and sets up a non-r
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/common-utils:1": {
+    "ghcr.io/cmbrose/devcontainer-features/common-utils:1": {
         "version": "latest"
     }
 }
@@ -23,7 +23,7 @@ Installs a set of common command line utilities, Oh My Zsh!, and sets up a non-r
 | username | Enter name of non-root user to configure or none to skip | string | automatic |
 | uid | Enter uid for non-root user | string | automatic |
 | gid | Enter gid for non-root user | string | automatic |
-| nonFreePackages | Add packages from non-free Debian repository? | boolean | - |
+| nonFreePackages | Add packages from non-free Debian repository? | boolean | false |
 
 ## Speeding up the command prompt in large repositories
 
@@ -41,4 +41,4 @@ This setting will survive a rebuild since it is applied to the repository rather
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/common-utils/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/common-utils/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

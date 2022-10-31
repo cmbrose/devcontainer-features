@@ -7,7 +7,7 @@ Installs the provided version of Python, as well as PIPX, and other common Pytho
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/python:1": {
+    "ghcr.io/cmbrose/devcontainer-features/python:1": {
         "version": "latest"
     }
 }
@@ -19,13 +19,13 @@ Installs the provided version of Python, as well as PIPX, and other common Pytho
 |-----|-----|-----|-----|
 | version | Select a Python version to install. | string | os-provided |
 | installTools | Install common Python tools like pylint | boolean | true |
-| optimize | Optimize Python for performance when compiled (slow) | boolean | - |
+| optimize | Optimize Python for performance when compiled (slow) | boolean | false |
 | installPath | The path where python will be installed. | string | /usr/local/python |
-| installJupyterlab | Install JupyterLab, a web-based interactive development environment for notebooks | boolean | - |
-| configureJupyterlabAllowOrigin | Configure JupyterLab to accept HTTP requests from the specified origin | string | - |
+| installJupyterlab | Install JupyterLab, a web-based interactive development environment for notebooks | boolean | false |
+| configureJupyterlabAllowOrigin | Configure JupyterLab to accept HTTP requests from the specified origin | string |  |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/python/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/python/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
