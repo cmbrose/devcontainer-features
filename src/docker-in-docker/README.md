@@ -7,7 +7,7 @@ Create child containers *inside* a container, independent from the host's docker
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+    "ghcr.io/cmbrose/devcontainer-features/docker-in-docker:1": {
         "version": "latest"
     }
 }
@@ -21,10 +21,10 @@ Create child containers *inside* a container, independent from the host's docker
 | moby | Install OSS Moby build instead of Docker CE | boolean | true |
 | dockerDashComposeVersion | Default version of Docker Compose (v1 or v2) | string | v1 |
 | azureDnsAutoDetection | Allow automatically setting the dockerd DNS server when the installation script detects it is running in Azure | boolean | true |
-| dockerDefaultAddressPool | Define default address pools for Docker networks. e.g. base=192.168.0.0/16,size=24 | string | - |
+| dockerDefaultAddressPool | Define default address pools for Docker networks. e.g. base=192.168.0.0/16,size=24 | string |  |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/docker-in-docker/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/docker-in-docker/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
