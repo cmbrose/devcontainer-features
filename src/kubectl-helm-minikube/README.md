@@ -7,7 +7,7 @@ Installs latest version of kubectl, Helm, and optionally minikube. Auto-detects 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
+    "ghcr.io/cmbrose/devcontainer-features/kubectl-helm-minikube:1": {}
 }
 ```
 
@@ -18,6 +18,7 @@ Installs latest version of kubectl, Helm, and optionally minikube. Auto-detects 
 | version | Select or enter a Kubernetes version to install | string | latest |
 | helm | Select or enter a Helm version to install | string | latest |
 | minikube | Select or enter a Minikube version to install | string | latest |
+| kubectlFallbackVersion | Fallback kubectl version to use when the latest stable version cannot be fetched | string | v1.35.1 |
 
 ## Ingress and port forwarding
 
@@ -42,4 +43,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/kubectl-helm-minikube/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/kubectl-helm-minikube/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

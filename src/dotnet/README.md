@@ -7,7 +7,7 @@ This Feature installs the latest .NET SDK, which includes the .NET CLI and the s
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/dotnet:2": {}
+    "ghcr.io/cmbrose/devcontainer-features/dotnet:2": {}
 }
 ```
 
@@ -40,9 +40,10 @@ Installing only the latest .NET SDK version (the default).
 
 Installing an additional SDK version. Multiple versions can be specified as comma-separated values.
 
-``` json
+``` jsonc
 "features": {
     "ghcr.io/devcontainers/features/dotnet:2": {
+        "version": "latest", // (this can be omitted)
         "additionalVersions": "lts"
     }
 }
@@ -101,13 +102,44 @@ Installing .NET workloads. Multiple workloads can be specified as comma-separate
 }
 ```
 
+Installing prerelease builds. Supports `preview` and `daily` suffixes.
+
+``` json
+"features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+        "version": "10.0-preview",
+        "additionalVersions": "10.0.1xx-daily",
+        "dotnetRuntimeVersions": "10.0-daily",
+        "aspNetCoreRuntimeVersions": "10.0-daily"
+    }
+}
+```
+
 ## OS Support
 
 This Feature should work on recent versions of Debian/Ubuntu-based distributions with the `apt` package manager installed.
 
 `bash` is required to execute the `install.sh` script.
 
+## Tab completions
+
+When using .NET SDK 10 or newer, tab completions for the `dotnet` CLI are automatically installed for bash, zsh, and fish. The completion scripts are placed in the standard system-wide directories so they work for all users:
+
+- **Bash**: `/usr/share/bash-completion/completions/dotnet`
+- **Zsh**: `/usr/share/zsh/site-functions/_dotnet`
+- **Fish**: `/usr/share/fish/vendor_completions.d/dotnet.fish`
+
+To disable this, set `tabCompletions` to `false`:
+
+``` json
+"features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+        "tabCompletions": false
+    }
+}
+```
+
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/dotnet/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/dotnet/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

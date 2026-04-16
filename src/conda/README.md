@@ -7,7 +7,7 @@ A cross-platform, language-agnostic binary package manager
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/conda:2": {}
+    "ghcr.io/cmbrose/devcontainer-features/conda:2": {}
 }
 ```
 
@@ -35,11 +35,11 @@ conda install python=3.7
 
 ## OS Support
 
-This Feature should work on recent versions of Debian/Ubuntu-based distributions with the `apt` package manager installed.
+This Feature should work on recent versions of Debian/Ubuntu-based distributions with the `apt` package manager installed. Both `x86_64` and `aarch64` architectures are supported.
 
 `bash` is required to execute the `install.sh` script.
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/conda/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/conda/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

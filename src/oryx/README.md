@@ -7,7 +7,7 @@ Installs the oryx CLI
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/oryx:2": {}
+    "ghcr.io/cmbrose/devcontainer-features/oryx:2": {}
 }
 ```
 
@@ -24,4 +24,4 @@ See [supportedPlatformVersions.md](https://github.com/microsoft/Oryx/blob/main/d
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/oryx/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/oryx/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
