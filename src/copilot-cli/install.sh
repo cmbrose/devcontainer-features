@@ -80,3 +80,9 @@ echo "Downloading GitHub Copilot CLI..."
 
 install_using_github
 
+# Create a flag file if using "latest" so the postStartCommand knows to auto-update
+if [ "${CLI_VERSION}" = "latest" ]; then
+    mkdir -p /etc/devcontainer-copilot-cli
+    touch /etc/devcontainer-copilot-cli/use-latest
+fi
+
