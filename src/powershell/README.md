@@ -7,7 +7,7 @@ Installs PowerShell along with needed dependencies. Useful for base Dockerfiles 
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/powershell:2": {}
+    "ghcr.io/cmbrose/devcontainer-features/powershell:2": {}
 }
 ```
 
@@ -16,7 +16,7 @@ Installs PowerShell along with needed dependencies. Useful for base Dockerfiles 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter a version of PowerShell. | string | latest |
-| modules | Optional comma separated list of PowerShell modules to install. If you need to install a specific version of a module, use '==' to specify the version (e.g. 'az.resources==2.5.0') | string | - |
+| modules | Optional comma separated list of PowerShell modules to install. If you need to install a specific version of a module, use '==' to specify the version (e.g. 'az.resources==2.5.0'). | string | - |
 | powershellProfileURL | Optional (publicly accessible) URL to download PowerShell profile. | string | - |
 
 ## Customizations
@@ -36,4 +36,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/powershell/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/cmbrose/devcontainer-features/blob/main/src/powershell/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
